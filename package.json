@@ -1,8 +1,8 @@
 {
-  "name": "coffeetales-api",
+  "name": "node-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/GraceChiamaka/coffeetales-API.git",
+  "repository": "https://github.com/lyndachiwetelu/node-starter.git",
   "author": "Lynda Chiwetelu <lyndachiwe@gmail.com>",
   "license": "MIT",
   "scripts": {
