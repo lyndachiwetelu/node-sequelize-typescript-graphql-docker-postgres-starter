@@ -7,9 +7,9 @@
 - Apollo Graphql server
 - Authentication with JWT. Uses HTTP read only cookies.
 - Example (User) GraphQL schema and resolvers
-- Postgres for Data Store (Used in a docker container)
+- PostgreSQL for Data Store (Used in a docker container)
 - [sequelize-typescript project](https://www.npmjs.com/package/sequelize-typescript) as ORM
-- Dockerfile and docker-compose to set up *in dev environment*
+- Dockerfile and docker-compose file to set up *in dev environment*
 - Migrations with [umzug](https://github.com/sequelize/umzug) from sequelize 
 
 ### How to run the first time:
@@ -27,7 +27,7 @@ ORIGINS=https://studio.apollographql.com,[YOUR_URL]
 - After the docker-compose command, wait 1 min and navigate to [`http://localhost:4001/graphql`](http://localhost:4001/graphql) and you can run your graphql queries there to test them directly.
 - If you see [the graphql server interface](`http://localhost:4001/graphql`) then it means the api should be working, you can now make requests from your client but before that,
 - Enable cookies in Apollo Studio, so visit [`http://localhost:4001/graphql`](http://localhost:4001/graphql) , go to settings (Gear Icon) and click the cookie switch on:
-![image showing apollo cookies option](https://github.com/lyndachiwetelu/node-sequelize-typescript-graphql-docker-postgres-starter/blob/main/apollo-cookies.png?raw=true)
+![image showing apollo cookies option](https://github.com/lyndachiwetelu/node-sequelize-typescript-graphql-docker-postgres-starter/blob/master/apollo-cookies.png?raw=true)
 
 
 ### How to run subsequently:
