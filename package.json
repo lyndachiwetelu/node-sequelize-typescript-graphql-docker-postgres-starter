@@ -1,0 +1,48 @@
+{
+  "name": "coffeetales-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GraceChiamaka/coffeetales-API.git",
+  "author": "Lynda Chiwetelu <lyndachiwe@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && babel src --out-dir dist --extensions .ts",
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/server.ts",
+    "migrate": "'ts-node' src/migration.ts",
+    "generate-migration": "'ts-node' src/generateMigration.ts"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@graphql-tools/schema": "^8.1.2",
+    "@graphql-tools/utils": "^8.1.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/lodash": "^4.14.172",
+    "@types/node": "^16.7.1",
+    "@types/umzug": "^2.3.2",
+    "@types/validator": "^13.6.3",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@graphql-tools/resolvers-composition": "^6.3.5",
+    "apollo-server-express": "^3.1.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.6.5",
+    "sequelize-typescript": "^2.1.0",
+    "umzug": "^3.0.0-beta.16"
+  }
+}
