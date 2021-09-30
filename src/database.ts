@@ -42,7 +42,7 @@ export const initDB = () => {
         const pool = new pg.Pool(config)
         const client = await pool.connect()
         try {
-            const query = await client.query('CREATE DATABASE coffeetales;')
+            const query = await client.query(`CREATE DATABASE ${activeConfig.database};`)
             console.log('Database created successfully');
             await initDBConnection()
         } catch (err) {
